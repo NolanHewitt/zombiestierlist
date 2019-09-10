@@ -8,7 +8,6 @@
 .flip-container.flip .flipper {
     transform: rotateY(180deg);
     background: transparent;
-    backface-visibility: hidden;
 }
 
 .flip-container, .front, .back {
@@ -21,8 +20,7 @@
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-    position: relative;
-    backface-visibility: hidden;
+	position: relative;
 }
 
 /* hide back of pane during swap */
@@ -46,7 +44,7 @@
 .back {
 	background-color: black;
 	color: white;
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
     backface-visibility: hidden;
 }
 
