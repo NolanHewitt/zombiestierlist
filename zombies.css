@@ -7,7 +7,6 @@
 /* flip the pane when hovered - .flip-container:hover .flipper, .flip-container.hover .flipper , */
 .flip-container.flip .flipper {
     transform: rotateY(180deg);
-    background: transparent;
 }
 
 .flip-container, .front, .back {
