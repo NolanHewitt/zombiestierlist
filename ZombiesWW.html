@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+
+<link rel="stylesheet" href="zombies.css">
+
+</head>
+<body>
+<div id="S">
+
+  <br>
+
+    <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+        <div class="flipper">
+          <div class="front">
+            <p id="gunname1">Venom-Z</p>
+            <img id="gun1" src="./images/Venom-X.png"> 
+          </div>
+            <div class="back">
+              <p class="gundescription1"> This is a good one.</p>
+            </div>
+        </div>
+      </div>
+      
+      <br>
+
+      <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+          <div class="flipper">
+            <div class="front">
+              <p id="gunname1">Acid Rain</p>
+              <img id="gun2" src="./images/Acid_Rain.png"> 
+            </div>
+              <div class="back">
+                <p class="gundescription1"> This is a good one.</p>
+              </div>
+          </div>
+        </div>
+        
+        <br>
+
+  <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+    <div class="flipper">
+      <div class="front">
+        <p id="gunname1">Apothicon Servent</p>
+        <img id="gun3" src="./images/Apothicon_Servant.png"> 
+      </div>
+        <div class="back">
+          <p class="gundescription1"> This is a good one.</p>
+        </div>
+    </div>
+  </div>
+  
+  <br>
+
+<div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+  <div class="flipper">
+    <div class="front">
+      <p id="gunname1">Wave Gun</p>
+      <img class="gun" src="./images/wavegun.png"> 
+    </div>
+      <div class="back">
+        <p class="gundescription1"> This is a good one.</p>
+      </div>
+  </div>
+</div>
+
+<br>
+
+<div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+    <div class="flipper">
+      <div class="front">
+        <p id="gunname1">M.A.D.</p>
+        <img id="gun4" src="./images/mad.png"> 
+      </div>
+        <div class="back">
+          <p class="gundescription1"> This is a good one.</p>
+        </div>
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+      <div class="flipper">
+        <div class="front">
+          <p id="gunname1">Whirlwind</p>
+          <img id="gun5" src="./images/vlad.png"> 
+        </div>
+          <div class="back">
+            <p class="gundescription1"> This is a good one.</p>
+          </div>
+      </div>
+    </div>
+    
+    <br>
+
+<div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+    <div class="flipper">
+      <div class="front">
+        <p id="gunname1">Sliquifier</p>
+        <img id="gun6" src="./images/sliquifier.png"> 
+      </div>
+        <div class="back">
+          <p class="gundescription1"> This is a good one.</p>
+        </div>
+    </div>
+  </div>
+  
+  <br>
+
+<div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+  <div class="flipper">
+    <div class="front">
+      <p id="gunname1">Shrinkray JGB</p>
+      <img id="gun7" src="./images/shrink.png"> 
+    </div>
+      <div class="back">
+        <p class="gundescription1"> This is a good one.</p>
+      </div>
+  </div>
+</div>
+
+<br>
+
+<div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+  <div class="flipper">
+    <div class="front">
+      <p id="gunname1">Thundergun</p>
+      <img id="gun8" src="./images/thundergun.png"> 
+    </div>
+      <div class="back">
+        <p class="gundescription1"> This is a good one.</p>
+      </div>
+  </div>
+</div>
+
+<br>
+
+<div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+    <div class="flipper">
+      <div class="front">
+        <p id="gunname1">Alistair's Folly</p>
+        <img id="gun9" src="./images/Alistair.png"> 
+      </div>
+        <div class="back">
+          <p class="gundescription1"> This is a good one.</p>
+        </div>
+    </div>
+  </div>
+  
+  <br>
+
+<div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+  <div class="flipper">
+    <div class="front">
+      <p id="gunname1">Ice Staff</p>
+      <img id="gun10" src="./images/icestaff.png"> 
+    </div>
+      <div class="back">
+        <p class="gundescription1"> This is a good one.</p>
+      </div>
+  </div>
+</div>
+
+<br>
+
+<div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+  <div class="flipper">
+    <div class="front">
+      <p id="gunname1">Fire Staff</p>
+      <img id="gun11" src="./images/firestaff.png"> 
+    </div>
+      <div class="back">
+        <p class="gundescription1"> This is a good one.</p>
+      </div>
+  </div>
+</div>
+
+<br>
+
+</div>
+
+<div id="A">
+
+  <br>
+
+    <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+        <div class="flipper">
+          <div class="front">
+            <p id="gunname1">Trap-o-matic</p>
+            <img id="gun12" src="./images/vlad.png"> 
+          </div>
+            <div class="back">
+              <p class="gundescription1"> This is a good one.</p>
+            </div>
+        </div>
+      </div>
+      
+      <br>
+
+  <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+    <div class="flipper">
+      <div class="front">
+        <p id="gunname1">Raygun MK2</p>
+        <img id="gun13" src="./images/rg2.png"> 
+      </div>
+        <div class="back">
+          <p class="gundescription1"> This is a good one.</p>
+        </div>
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+    <div class="flipper">
+      <div class="front">
+        <p id="gunname1">Raygun MK3</p>
+        <img id="gun14" src="./images/rg3.png"> 
+      </div>
+        <div class="back">
+          <p class="gundescription1"> This is a good one.</p>
+        </div>
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+    <div class="flipper">
+      <div class="front">
+        <p id="gunname1">Wind Staff</p>
+        <img class="gun" src="./images/windstaff.png"> 
+      </div>
+        <div class="back">
+          <p class="gundescription1"> This is a good one.</p>
+        </div>
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+    <div class="flipper">
+      <div class="front">
+        <p id="gunname1">Paralyzer</p>
+        <img id="gun15" src="./images/paralyzer.png"> 
+      </div>
+        <div class="back">
+          <p class="gundescription1"> This is a good one.</p>
+        </div>
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+      <div class="flipper">
+        <div class="front">
+          <p id="gunname1">Katana</p>
+          <img id="gun16" src="./images/katana.png"> 
+        </div>
+          <div class="back">
+            <p class="gundescription1"> This is a good one.</p>
+          </div>
+      </div>
+    </div>
+    
+    <br>
+  
+  </div>
+
+  <div id="B">
+
+    <br>
+
+    <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+      <div class="flipper">
+        <div class="front">
+          <p id="gunname1">Jet Gun</p>
+          <img id="gun17" src="./images/jet.png"> 
+        </div>
+          <div class="back">
+            <p class="gundescription1"> This is a good one.</p>
+          </div>
+      </div>
+    </div>
+    
+    <br>
+
+    <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+      <div class="flipper">
+        <div class="front">
+          <p id="gunname1">Wunderwaffe</p>
+          <img id="gun18" src="./images/wunderwaffe.png"> 
+        </div>
+          <div class="back">
+            <p class="gundescription1"> This is a good one.</p>
+          </div>
+      </div>
+    </div>
+    
+    <br>
+
+    <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+      <div class="flipper">
+        <div class="front">
+          <p id="gunname1">Magmagat</p>
+          <img id="gun19" src="./images/blundergat.png"> 
+        </div>
+          <div class="back">
+            <p class="gundescription1"> This is a good one.</p>
+          </div>
+      </div>
+    </div>
+    
+    <br>
+
+    <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+      <div class="flipper">
+        <div class="front">
+          <p id="gunname1">Winter's Howl (BO4)</p>
+          <img id="gun20" src="./images/wintershowl.png"> 
+        </div>
+          <div class="back">
+            <p class="gundescription1"> This is a good one.</p>
+          </div>
+      </div>
+    </div>
+    
+    <br>
+
+    <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+        <div class="flipper">
+          <div class="front">
+            <p id="gunname1">Nunchucks</p>
+            <img id="gun21" src="./images/nunchucks.png"> 
+          </div>
+            <div class="back">
+              <p class="gundescription1"> This is a good one.</p>
+            </div>
+        </div>
+      </div>
+      
+      <br>
+
+    <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+      <div class="flipper">
+        <div class="front">
+          <p id="gunname1">Acidgat</p>
+          <img id="gun22" src="./images/blundergat.png"> 
+        </div>
+          <div class="back">
+            <p class="gundescription1"> This is a good one.</p>
+          </div>
+      </div>
+    </div>
+    
+    <br>
+
+    <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+        <div class="flipper">
+          <div class="front">
+            <p id="gunname1">Smiley</p>
+            <img id="gun23" src="./images/Smiley.png"> 
+          </div>
+            <div class="back">
+              <p class="gundescription1"> This is a good one.</p>
+            </div>
+        </div>
+      </div>
+      
+      <br>
+    
+    </div>
+
+    <div id="C">
+
+      <br>
+
+      <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+        <div class="flipper">
+          <div class="front">
+            <p id="gunname1">VR11</p>
+            <img id="gun24" src="./images/vr11.png"> 
+          </div>
+            <div class="back">
+              <p class="gundescription1"> This is a good one.</p>
+            </div>
+        </div>
+      </div>
+      
+      <br>
+
+      <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+        <div class="flipper">
+          <div class="front">
+            <p id="gunname1">Raygun</p>
+            <img id="gun25" src="./images/raygun.png"> 
+          </div>
+            <div class="back">
+              <p class="gundescription1"> This is a good one.</p>
+            </div>
+        </div>
+      </div>
+      
+      <br>
+
+      <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+        <div class="flipper">
+          <div class="front">
+            <p id="gunname1">Scavenger</p>
+            <img id="gun26" src="./images/Scavenger.png"> 
+          </div>
+            <div class="back">
+              <p class="gundescription1"> This is a good one.</p>
+            </div>
+        </div>
+      </div>
+      
+      <br>
+
+      <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+        <div class="flipper">
+          <div class="front">
+            <p id="gunname1">Lightning Staff</p>
+            <img class="gun" src="./images/lightningstaff.png"> 
+          </div>
+            <div class="back">
+              <p class="gundescription1"> This is a good one.</p>
+            </div>
+        </div>
+      </div>
+      
+      <br>
+      
+      </div>
+
+      <div id="D">
+        
+        <br>
+
+        <div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip');">
+            <div class="flipper">
+              <div class="front">
+                <p id="gunname1">Ben Franklin</p>
+                <img class="gun" src="./images/benfranklin.png"> 
+              </div>
+                <div class="back">
+                  <p class="gundescription1"> This is a good one.</p>
+                </div>
+            </div>
+          </div>
+          
+          <br>
+        
+        </div>
+
+        <div id="F">
+
+  
+          
+          <br>
+          
+          </div>
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+.flip-container {
+	perspective: 1000px;
+	margin: auto;
+	cursor: pointer;
+}
+/* flip the pane when hovered - .flip-container:hover .flipper, .flip-container.hover .flipper , */
+.flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 300px;
+	height: 300px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	background-color: rebeccapurple;
+	color: white;
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	background-color: black;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+#S{
+    width: 100%;
+    background-color: gold;
+}
+
+#A{
+	width: 100%;
+	background-color: red;
+}
+
+#B{
+	width: 100%;
+	background-color: blue;
+}
+
+#C{
+	width: 100%;
+	background-color: green;
+}
+
+#D{
+	width: 100%;
+	background-color: grey;
+}
+
+#F{
+	width: 100%;
+	background-color: black;
+}
+
+.gun {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -55px;
+}
+
+#gun1 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -25px;
+}
+
+#gun2 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -25px;
+}
+
+#gun3 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -50px;
+}
+
+#gun4 {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -45px;
+}
+
+#gun5 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -35px;
+}
+
+#gun6 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -25px;
+}
+
+#gun7 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: 50px;
+}
+
+#gun8 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -25px;
+}
+
+#gun9 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -25px;
+}
+
+#gun10 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -55px;
+}
+
+#gun11 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -55px;
+}
+
+#gun12 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -35px;
+}
+
+#gun13 {
+    height: 80%;
+    width: 105%;
+    display: flex;
+    z-index: 0;
+	margin-top: -35px;
+}
+
+#gun14 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -35px;
+}
+
+#gun15 {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -35px;
+}
+
+#gun16 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -5px;
+}
+
+#gun17 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -5px;
+}
+
+#gun18 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -5px;
+}
+
+#gun19 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -5px;
+}
+
+#gun20 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -5px;
+}
+#gun21 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: 5px;
+}
+
+#gun22 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -5px;
+}
+
+#gun23 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -5px;
+}
+
+#gun24 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -5px;
+}
+
+#gun25 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: -55px;
+}
+
+#gun26 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    margin-top: 55px;
+}
+
+.gundescription1 {
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+#gunname1{
+    display: block;
+    z-index: 1;
+    margin-top: 15px;
+    margin-left: 28%;
+    font-size: 30px;
+}
+
+#gunname2{
+    display: block;
+    z-index: 1;
+    margin-top: 15px;
+    margin-left: 28%;
+    font-size: 30px;
+}
+
