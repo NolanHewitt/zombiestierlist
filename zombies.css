@@ -1,24 +1,28 @@
 .flip-container {
 	perspective: 1000px;
 	margin: auto;
-	cursor: pointer;
+    cursor: pointer;
+    backface-visibility: hidden;
 }
 /* flip the pane when hovered - .flip-container:hover .flipper, .flip-container.hover .flipper , */
 .flip-container.flip .flipper {
     transform: rotateY(180deg);
     background: transparent;
+    backface-visibility: hidden;
 }
 
 .flip-container, .front, .back {
 	width: 300px;
-	height: 300px;
+    height: 300px;
+    backface-visibility: hidden;
 }
 
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-	position: relative;
+    position: relative;
+    backface-visibility: hidden;
 }
 
 /* hide back of pane during swap */
